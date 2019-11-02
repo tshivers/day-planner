@@ -11,64 +11,85 @@
    
    
     <link rel="stylesheet" type="text/css" href="styles.css">
+
     <title>Work Day Scheduler</title>
 </head>
+
 <body>
     <header class="jumbotron">
         <h1>Work Day Scheduler</h1>
-        <p>A simple calendar app for scheduling your work day</p>
-        <div id="currentDay"></div>
+        <p class="day-app">A simple calendar app for scheduling your work day</p>
+        <p id="currentDay"></p>
     </header> 
-    <div class="container"></div>
+    <div class="container">
         <div class="row">
-            <div class="col-md-2" style="background-color:grey;">
-                <p>timePlaceholder</p>
+            <div class="col-1="><h3>9 AM</h3>
+                <div class="col-9">
+                    <textarea class="form" id="formTextarea1" rows="2"></textarea>
+            <div class="col-2"><button type="button" class="btn btn-primary btn-lg saveBtn nine">Save</button>
         </div>
         <div class="row">
-            <div class="col-md-8" style="background-color:grey;">
-                <p>eventPlaceholder</p>
-         </div>     
+            <div class="col-1="><h3>10 AM</h3>
+                <div class="col-9">
+                    <textarea class="form" id="formTextarea2" rows="2"></textarea>
+                <div class="col-2"><button type="button" class="btn btn-primary btn-lg saveBtn ten">Save</button>
+            </div>
         <div class="row">
-            <div class="col-md-2" style="background-color:grey;">
-                <p>savePlaceholder</p>
-        </div>
+            <div class="col-1="><h3>11 AM</h3>
+                <div class="col-9">
+                    <textarea class="form" id="formTextarea3" rows="2"></textarea>
+                <div class="col-2"><button type="button" class="btn btn-primary btn-lg saveBtn eleven">Save</button>
+            </div> 
         <div class="row">
-            <div class="col-md-2" style="background-color: red;">
-                <p>timePlaceholder</p>
-        </div>
+            <div class="col-1="><h3>12 PM</h3>
+                <div class="col-9">
+                    <textarea class="form" id="formTextarea4" rows="2"></textarea>
+                <div class="col-2"><button type="button" class="btn btn-primary btn-lg saveBtn noon">Save</button>
+            </div>  
         <div class="row">
-            <div class="col-md-8" style="background-color: green;">
-                <p>eventPlaceholder</p>
-        </div>     
+            <div class="col-1="><h3>1 PM</h3>
+                <div class="col-9">
+                    <textarea class="form" id="formTextarea5" rows="2"></textarea>
+                <div class="col-2"><button type="button" class="btn btn-primary btn-lg saveBtn one">Save</button>
+            </div>
         <div class="row">
-            <div class="col-md-2" style="background-color: green;">
-                <p>savePlaceholder</p>
-        </div>
+            <div class="col-1="><h3>2 PM</h3>
+                <div class="col-9">
+                    <textarea class="form" id="formTextarea6" rows="2"></textarea>
+                <div class="col-2"><button type="button" class="btn btn-primary btn-lg saveBtn two">Save</button>
+            </div> 
         <div class="row">
-            <div class="col-md-2" style="background-color: green;">
-            <p>timePlaceholder</p>
-         </div>
+            <div class="col-1="><h3>3 PM</h3>
+                <div class="col-9">
+                    <textarea class="form" id="formTextarea7" rows="2"></textarea>
+                <div class="col-2"><button type="button" class="btn btn-primary btn-lg saveBtn three">Save</button>
+            </div>
         <div class="row">
-            <div class="col-md-8" style="background-color: green;">
-            <p>eventPlaceholder</p>
-        </div>     
+            <div class="col-1="><h3>4 PM</h3>
+                <div class="col-9">
+                    <textarea class="form" id="formTextarea8" rows="2"></textarea>
+                <div class="col-2"><button type="button" class="btn btn-primary btn-lg saveBtn four">Save</button>
+            </div> 
         <div class="row">
-            <div class="col-md-2" style="background-color: green;">
-            <p>savePlaceholder</p>
-        </div>
+            <div class="col-1="><h3>5 PM</h3>
+                <div class="col-9">
+                    <textarea class="form" id="formTextarea9" rows="2"></textarea>
+                <div class="col-2"><button type="button" class="btn btn-primary btn-lg saveBtn five">Save</button>
+            </div>     
+        </div>      
     </div>
 
-        <!-- Moment.js for date/time reference-->
-        <script type="text/javascript" src="moment.js"></script>
-            <script type="text/javascript">
-            // var that calls for the current day and date 
-                var currentDate = moment().format('dddd MMMM Do');
-                var mainDate = document.getElementById('currentDay');
-                mainDate.innerHTML = currentDate;
-            </script>
-
-            
-        
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    
+    <!-- Moment.js for date/time reference-->
+    <script type="text/javascript" src="moment.js"></script>
+    <script type="text/javascript">
+        // var that calls for the current day and date 
+            var currentDate = moment().format('dddd MMMM Do');
+            var mainDate = document.getElementById('currentDay');
+            mainDate.innerHTML = currentDate;
+            </script>    
     </div>
 </body>
 </html>
